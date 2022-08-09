@@ -1,10 +1,13 @@
-<script setup lang='ts'>
+<script lang='ts'>
+// const name='HomeView'
+export default {
 
+}
 </script>
 
-<template setup lang="ts">
-const name='HomeView'
+<template>
 </template>
 
 <style scoped lang='less'>
+
 </style>

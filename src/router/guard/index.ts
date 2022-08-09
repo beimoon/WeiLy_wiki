@@ -8,6 +8,6 @@ export function setupRouterGuard(router: Router) {
   })
   router.afterEach((to: RouteLocationNormalized, _: RouteLocationNormalized) => {
     Nprogress.done()
-    document.title = (to.meta.title || 'pity starter') as string
+    document.title = (to.meta.title || 'WeiLy-Wiki') as string
   })
 }

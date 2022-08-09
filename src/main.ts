@@ -7,6 +7,8 @@ import '@unocss/reset/tailwind.css'
 import { setupRouter } from './router'
 import pinia from '@/store/index'
 
+import '@/assets/styles/common.less'
+
 async function bootstrap(app: App): Promise<App> {
   setupRouter(app)
   return app

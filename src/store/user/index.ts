@@ -15,8 +15,7 @@ export default defineStore({
     actions:{
         setUser(state,playload){
             state.userInfo=playload
-            console.log(state)
-            console.log(playload)
+            console.log(state.userInfo)
         }
     }
 

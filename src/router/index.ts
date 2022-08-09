@@ -5,8 +5,13 @@ import { setupRouterGuard } from './guard'
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    redirect: '/home',
+    redirect: '/login',
   },
+  {
+    path:'/login',
+    component:()=>import('@/views/login/index.vue')
+  }
+  ,
   {
     path: '/home',
     component: () => import('@/views/home/index.vue'),
