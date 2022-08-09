@@ -5,6 +5,7 @@ import appView from './App.vue'
 import 'uno.css'
 import '@unocss/reset/tailwind.css'
 import { setupRouter } from './router'
+import pinia from '@/store/index'
 
 async function bootstrap(app: App): Promise<App> {
   setupRouter(app)
@@ -12,5 +13,6 @@ async function bootstrap(app: App): Promise<App> {
 }
 
 const app = createApp(appView)
+app.use(pinia)
 
 bootstrap(app).then(res => res.mount('#app'))
