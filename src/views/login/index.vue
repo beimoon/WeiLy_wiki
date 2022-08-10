@@ -43,7 +43,7 @@ export default {
   height: 100%;
   background-color:#2e93be;
   .inner{
-    width: 1037px;
+    width: 1200px;
     height: 799px;
     background-color: #ffffff;
     border-radius:20px;
@@ -52,7 +52,7 @@ export default {
     transform: translateY(-50%);
     margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 
     .form{
