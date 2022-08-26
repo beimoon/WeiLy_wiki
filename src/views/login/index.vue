@@ -1,7 +1,8 @@
 <script lang='ts'>
 // const name='HomeView'
-import user from '@/store/user/index'
+import user from '@/store/modules/user/index'
 import loginForm from '@/components/loginForm/index.vue'
+import { NMessageProvider } from "naive-ui";
 export default {
   setup(){
     const userInfo=user()
@@ -29,10 +30,14 @@ export default {
           <p class="bottom_line"></p>
         </div>
       </div>
+      <n-message-provider>
         <LoginForm
             class="form"
         ></LoginForm>
+      </n-message-provider>
+
     </div>
+
   </div>
 </template>
 

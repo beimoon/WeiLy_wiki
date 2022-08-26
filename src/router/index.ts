@@ -23,6 +23,8 @@ const router: Router = createRouter({
   routes,
 })
 
+export {router}
+
 export function setupRouter(app: App) {
   setupRouterGuard(router)
   app.use(router)

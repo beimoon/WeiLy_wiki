@@ -21,7 +21,9 @@
     "noImplicitAny": false,
     "skipLibCheck": true,
     "types": [
-      "vite/client"
+      "vite/client",
+      //add type
+//      "pinia-plugin-persist"
     ],
     "removeComments": true,
     "typeRoots": ["./node_modules/@types", "./types"],
